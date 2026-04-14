@@ -43,6 +43,27 @@ El botón de Google muestra primero un estado de carga y después un resultado s
 
 **Solo frontend.** No hay autenticación real, ni persistencia de usuarios, ni integración con Google Sign-In: todo lo que ves son pantallas y comportamiento simulado para el taller.
 
-## Evidencia (opcional)
+## Evidencia de funcionamiento
 
-Si el curso pide capturas, conviene guardar unas pocas en una carpeta (por ejemplo `docs/`) mostrando: login con error de validación, registro con contraseñas que no coinciden, diálogo de “cargando” de Google y la pantalla de inicio tras un acceso simulado.
+Capturas del flujo implementado (ubicadas en `docs/evidencias`):
+
+- `01_login_vista_general.png`
+- `02_login_validacion_campos.png`
+- `03_register_vista_general.png`
+- `04_register_password_no_coincide.png`
+- `05_forgot_vista_general.png`
+- `06_forgot_confirmacion_envio.png`
+- `07_google_cargando.png`
+- `08_google_resultado.png`
+- `09_google_cancelado.png`
+
+## Pruebas manuales realizadas
+
+- [x] Navegación entre pantallas: Login -> Register -> Forgot Password -> retorno a Login.
+- [x] Validación de campos vacíos en Login.
+- [x] Validación de formato de correo cuando aplica.
+- [x] Validación de contraseña según reglas del formulario.
+- [x] Validación de confirmación de contraseña en Register.
+- [x] Simulación de Google con estado de carga.
+- [x] Simulación de resultado de Google: éxito y cancelado.
+- [x] Mensajes simulados (SnackBar/AlertDialog) en login, registro y recuperación.
